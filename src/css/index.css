@@ -9,24 +9,27 @@ button {
   font-size: 0.9rem;
   border: none;
   letter-spacing: 1px;
-  padding: 0.75rem 1.5rem;
-  cursor: pointer;
-  width: fit-content;
-  font-family: "Nexa-Bold"; }
+  padding: 0.5rem 2rem;
+  cursor: pointer; }
+  @media (min-width: 1024px) {
+    button {
+      padding: 0.75rem 1rem; } }
 
 .accentButton {
-  background-color: var(--very-dark-blue);
-  color: var(--white); }
+  background-color: #021433;
+  color: #fff;
+  border: 1px solid #021433; }
 
 .filledButton {
-  background-color: var(--dodger-blue);
-  color: var(--white);
-  border-radius: 0.25rem; }
+  background-color: #047aed;
+  color: #fff;
+  border-radius: 0.25rem;
+  border: 1px solid #047aed; }
 
 .linkButton {
-  background-color: var(--white);
-  color: var(--dark-blue);
-  border: 1px solid var(--very-dark-blue);
+  background-color: #fff;
+  color: #222844;
+  border: 1px solid #021433;
   border-radius: 5px; }
 
 * {
@@ -35,7 +38,7 @@ button {
 body {
   font-family: "Nexa-Light"; }
 
-nav,
+header,
 section,
 footer {
   padding: 1.5rem; }
@@ -137,7 +140,7 @@ textarea {
   margin: 1rem; }
 
 @media (min-width: 1024px) {
-  nav {
+  header {
     padding: 2rem 5rem; }
 
   section,
@@ -159,5 +162,79 @@ textarea {
 
   h6 {
     font-size: 1.5rem; } }
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .header__figure {
+    width: 7rem; }
+  .header__navbar__services {
+    display: none; }
+    @media (min-width: 1024px) {
+      .header__navbar__services {
+        display: flex;
+        gap: 2rem; }
+        .header__navbar__services__item a {
+          color: #222844; } }
+  .header__hammerburger {
+    color: #525659; }
+    @media (min-width: 1024px) {
+      .header__hammerburger {
+        display: none; } }
+  .header__buttons {
+    display: none; }
+    @media (min-width: 1024px) {
+      .header__buttons {
+        display: block; }
+        .header__buttons button {
+          margin-left: 0.5rem;
+          border-radius: 3px; } }
+
+.find-affordable-healthcare {
+  background-color: #93bede;
+  text-align: center; }
+  @media (min-width: 1024px) {
+    .find-affordable-healthcare {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      height: 25rem;
+      background-image: url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img1.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; } }
+  .find-affordable-healthcare__content {
+    color: #222844; }
+    @media (min-width: 1024px) {
+      .find-affordable-healthcare__content {
+        width: 50%;
+        text-align: left;
+        margin-bottom: 2rem; } }
+  .find-affordable-healthcare__form__input-container {
+    display: flex;
+    width: 100%;
+    margin-bottom: 1rem;
+    background-color: #fff; }
+    @media screen and (min-width: 768px) {
+      .find-affordable-healthcare__form__input-container__treatment {
+        border-left: 1px solid #a19f9f; }
+      .find-affordable-healthcare__form__input-container--flex-shrink {
+        flex-shrink: 1.2; } }
+  .find-affordable-healthcare__form__input-container__location-icon, .find-affordable-healthcare__form__input-container__gps-icon {
+    color: #222844;
+    padding: 10px; }
+  .find-affordable-healthcare__form__input-container__place, .find-affordable-healthcare__form__input-container__treatment {
+    padding: 10px;
+    outline: none;
+    width: 100%; }
+  @media (min-width: 1024px) {
+    .find-affordable-healthcare__form {
+      width: 65%; } }
+  @media screen and (min-width: 768px) {
+    .find-affordable-healthcare__form {
+      display: flex; }
+    .find-affordable-healthcare .find-affordable-healthcare__form__input-container {
+      margin-bottom: 0; } }
 
 /*# sourceMappingURL=index.css.map */

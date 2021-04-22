@@ -21,10 +21,9 @@ body {
 }
 
 // GLOBAL PADDING
-nav,
+header,
 section,
 footer {
-  //   text-align: center;
   padding: 1.5rem;
 }
 
@@ -123,7 +122,7 @@ input {
   border: none;
   padding: 0.75rem;
 
-  @include desktop-view {
+  @include desktop-view-only {
     padding: 1rem;
   }
 }
@@ -156,8 +155,8 @@ textarea {
 }
 
 // MEDIA QUERY
-@include desktop-view {
-  nav {
+@include desktop-view-only {
+  header {
     padding: 2rem 5rem;
   }
 

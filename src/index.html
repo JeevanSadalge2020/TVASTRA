@@ -4,19 +4,158 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/index.css" />
+
+    <title>TVASTRA</title>
   </head>
   <body>
-    <nav>
-      <h1>
-        JEEVAN Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae in
-        vero, illo alias incidunt molestiae quo dolorum voluptate deleniti quam,
-        impedit omnis non eveniet amet repellat inventore adipisci aperiam esse
-        eos perspiciatis voluptates enim ipsa totam. Voluptatum ducimus iusto
-        hic molestias sapiente a aut praesentium necessitatibus eos!
-        Consectetur, neque iure.
-      </h1>
-    </nav>
+    <!-- HEADER -->
+    <header class="header">
+      <figure class="header__figure">
+        <img
+          src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Logo.jpg"
+          alt="logo"
+          class="header__figure_image"
+        />
+      </figure>
+      <!-- NAVBAR -->
+      <nav class="header__navbar">
+        <ul class="header__navbar__services">
+          <li class="header__navbar__services__item">
+            <a href="./doctor.html">Doctors</a>
+          </li>
+          <li class="header__navbar__services__item">
+            <a href="">Hospitals</a>
+          </li>
+          <li class="header__navbar__services__item">
+            <a href="">Treatment</a>
+          </li>
+          <li class="header__navbar__services__item">
+            <a href="">Other Services</a>
+          </li>
+          <li class="header__navbar__services__item">
+            <a href="">About</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- HEADER BUTTON -->
+      <div class="header__buttons">
+        <button class="header__buttons__login linkButton" type="submit">
+          Login / Sign Up
+        </button>
+        <button class="header__buttons__quote accentButton" type="submit">
+          Get a Quote
+        </button>
+      </div>
+      <!-- HAMMERBURGER -->
+      <i class="fas fa-bars header__hammerburger"></i>
+    </header>
+    <main>
+      <!-- FIND AFFORDABLE HEALTHCARE -->
+      <section class="find-affordable-healthcare">
+        <h1 class="find-affordable-healthcare__heading">
+          Find Affordable Healthcare
+        </h1>
+        <p class="find-affordable-healthcare__content">
+          Join the thousands of others who have exercised their rights to
+          quality healthcare at a price you can afford
+        </p>
+
+        <form class="find-affordable-healthcare__form">
+          <div
+            class="find-affordable-healthcare__form__input-container find-affordable-healthcare__form__input-container--flex-shrink"
+          >
+            <i
+              class="fas fa-map-marker-alt find-affordable-healthcare__form__input-container__location-icon"
+            >
+            </i>
+            <input
+              class="find-affordable-healthcare__form__input-container__place"
+              type="text"
+              placeholder="Ahemdabad"
+            />
+            <i
+              class="fas fa-crosshairs find-affordable-healthcare__form__input-container__gps-icon"
+            ></i>
+          </div>
+
+          <div class="find-affordable-healthcare__form__input-container">
+            <input
+              class="find-affordable-healthcare__form__input-container__treatment"
+              type="text"
+              name="location"
+              placeholder="Search for Doctor, hospitals and treatments"
+            />
+          </div>
+
+          <button
+            class="find-affordable-healthcare__form__search-button accentButton"
+            type="submit"
+          >
+            Search
+          </button>
+        </form>
+      </section>
+      <!----HOW IT WORKS---->
+
+      <section id="how-it-works">
+        <header>
+          <h3>How it works</h3>
+          <p>
+            Various facilities are provided here. But there is a protocol which
+            needs to be followed so that you get the service at its best.
+          </p>
+        </header>
+        <div class="protocols">
+          <ul>
+            <li>
+              <h5><span>01</span>Fix Consultation</h5>
+            </li>
+            <div class="protocol-details">
+              <figure>
+                <img
+                  src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img1.png"
+                  alt="fix consultion"
+                />
+              </figure>
+              <div>
+                <h6>Fix Consultation</h6>
+                <p>
+                  This depicts that user will have to fix appointments first
+                  when it selects a perticular doctor.
+                </p>
+              </div>
+            </div>
+            <div class="light">
+              <li>
+                <h5><span>02</span>Upload Medical Reports</h5>
+              </li>
+              <li>
+                <h5><span>03</span>Consult with Doctor</h5>
+              </li>
+              <li>
+                <h5><span>04</span>Fix Surgery</h5>
+              </li>
+              <li>
+                <h5><span>05</span>Hospital sent estimates</h5>
+              </li>
+              <li>
+                <h5><span>06</span>Payment</h5>
+              </li>
+              <li>
+                <h5><span>07</span>Surgery Completed</h5>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

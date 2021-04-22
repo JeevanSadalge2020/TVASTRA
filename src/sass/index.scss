@@ -1,1 +1,122 @@
 @import "theme.scss";
+
+// HEADER
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__figure {
+    width: 7rem;
+  }
+
+  &__navbar__services {
+    display: none;
+    @include desktop-view-only {
+      display: flex;
+      gap: 2rem;
+      &__item a {
+        color: $dark-blue;
+      }
+    }
+  }
+
+  &__hammerburger {
+    color: $dark-grey;
+
+    @include desktop-view-only {
+      // HIDE HAMMERBURGER IN DESKTOP
+      display: none;
+    }
+  }
+
+  &__buttons {
+    display: none;
+
+    @include desktop-view-only {
+      display: block;
+
+      button {
+        margin-left: 0.5rem;
+        border-radius: 3px;
+      }
+    }
+  }
+}
+
+// FIND AFFORDABLE HEALTH CARE
+.find-affordable-healthcare {
+  background-color: $sky-blue;
+  text-align: center;
+
+  @include desktop-view-only {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 25rem;
+    background-image: url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__content {
+    color: $dark-blue;
+    @include desktop-view-only {
+      width: 50%;
+      text-align: left;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__form {
+    &__input-container {
+      display: flex;
+      width: 100%;
+      margin-bottom: 1rem;
+      background-color: $white;
+
+      @include respond-above-tablet-view {
+        &__treatment {
+          border-left: 1px solid $grey;
+        }
+
+        &--flex-shrink {
+          flex-shrink: 1.2;
+        }
+      }
+    }
+
+    // INPUT ICONS
+    &__input-container__location-icon,
+    &__input-container__gps-icon {
+      color: $dark-blue;
+      padding: 10px;
+    }
+
+    &__input-container__place,
+    &__input-container__treatment {
+      padding: 10px;
+      outline: none;
+      width: 100%;
+    }
+
+    @include desktop-view-only {
+      width: 65%;
+
+      &__search-button {
+        // padding: 0.75rem 1rem;
+      }
+    }
+  }
+
+  @include respond-above-tablet-view {
+    &__form {
+      display: flex;
+    }
+    .find-affordable-healthcare__form__input-container {
+      margin-bottom: 0;
+    }
+  }
+}

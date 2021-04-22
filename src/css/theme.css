@@ -9,24 +9,27 @@ button {
   font-size: 0.9rem;
   border: none;
   letter-spacing: 1px;
-  padding: 0.75rem 1.5rem;
-  cursor: pointer;
-  width: fit-content;
-  font-family: "Nexa-Bold"; }
+  padding: 0.5rem 2rem;
+  cursor: pointer; }
+  @media (min-width: 1024px) {
+    button {
+      padding: 0.75rem 1rem; } }
 
 .accentButton {
-  background-color: var(--very-dark-blue);
-  color: var(--white); }
+  background-color: #021433;
+  color: #fff;
+  border: 1px solid #021433; }
 
 .filledButton {
-  background-color: var(--dodger-blue);
-  color: var(--white);
-  border-radius: 0.25rem; }
+  background-color: #047aed;
+  color: #fff;
+  border-radius: 0.25rem;
+  border: 1px solid #047aed; }
 
 .linkButton {
-  background-color: var(--white);
-  color: var(--dark-blue);
-  border: 1px solid var(--very-dark-blue);
+  background-color: #fff;
+  color: #222844;
+  border: 1px solid #021433;
   border-radius: 5px; }
 
 * {
@@ -35,7 +38,7 @@ button {
 body {
   font-family: "Nexa-Light"; }
 
-nav,
+header,
 section,
 footer {
   padding: 1.5rem; }
@@ -137,7 +140,7 @@ textarea {
   margin: 1rem; }
 
 @media (min-width: 1024px) {
-  nav {
+  header {
     padding: 2rem 5rem; }
 
   section,
