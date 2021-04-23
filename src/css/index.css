@@ -54,8 +54,7 @@ h6 {
 h1,
 h2 {
   font-size: 1.7rem;
-  line-height: 1.2;
-  color: #222844; }
+  line-height: 1.2; }
 
 h3 {
   font-size: 1.55rem;
@@ -162,6 +161,23 @@ textarea {
 
   h6 {
     font-size: 1.5rem; } }
+h1,
+h2,
+h3 {
+  color: #222844;
+  text-align: center; }
+  @media (min-width: 1024px) {
+    h1,
+    h2,
+    h3 {
+      text-align: left; } }
+
+a {
+  color: #222844; }
+
+h3 > p {
+  text-align: left; }
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -173,9 +189,7 @@ textarea {
     @media (min-width: 1024px) {
       .header__navbar__services {
         display: flex;
-        gap: 2rem; }
-        .header__navbar__services__item a {
-          color: #222844; } }
+        gap: 2rem; } }
   .header__hammerburger {
     color: #525659; }
     @media (min-width: 1024px) {
@@ -209,7 +223,6 @@ textarea {
     @media (min-width: 1024px) {
       .find-affordable-healthcare__content {
         width: 50%;
-        text-align: left;
         margin-bottom: 2rem; } }
   .find-affordable-healthcare__form__input-container {
     display: flex;
@@ -236,5 +249,74 @@ textarea {
       display: flex; }
     .find-affordable-healthcare .find-affordable-healthcare__form__input-container {
       margin-bottom: 0; } }
+
+.how-it-works__content {
+  color: #021433; }
+  @media (min-width: 1024px) {
+    .how-it-works__content {
+      margin-bottom: 4rem; } }
+.how-it-works__protocols__item {
+  font-family: "Nexa-Bold";
+  color: #222844;
+  padding: 0.75rem 1rem;
+  border: 1px solid #222844;
+  text-align: start;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem; }
+  @media screen and (min-width: 768px) {
+    .how-it-works__protocols__item {
+      width: 50%; } }
+  @media (min-width: 1024px) {
+    .how-it-works__protocols__item {
+      padding: 1.2rem; } }
+  @media (min-width: 1024px) {
+    .how-it-works__protocols__item {
+      width: 40%; } }
+  .how-it-works__protocols__item__heading {
+    margin-bottom: 0; }
+    @media (min-width: 1024px) {
+      .how-it-works__protocols__item__heading {
+        font-size: 1.25rem; } }
+    .how-it-works__protocols__item__heading span {
+      margin-right: 0.5rem;
+      color: #93bede;
+      font-size: 1.3rem; }
+      @media (min-width: 1024px) {
+        .how-it-works__protocols__item__heading span {
+          margin-right: 2rem; } }
+  .how-it-works__protocols__item--surgury-completed {
+    margin-bottom: 0; }
+.how-it-works__protocols__protocol-details__figure {
+  width: 90%;
+  margin: auto; }
+  @media screen and (min-width: 768px) {
+    .how-it-works__protocols__protocol-details__figure {
+      width: 80%; } }
+  .how-it-works__protocols__protocol-details__figure__image {
+    margin-bottom: 1rem; }
+.how-it-works__protocols__protocol-details__subheading {
+  text-align: center;
+  color: #222844; }
+  @media (min-width: 1024px) {
+    .how-it-works__protocols__protocol-details__subheading {
+      font-size: 1.1rem; } }
+.how-it-works__protocols__protocol-details__content {
+  color: #021433; }
+.how-it-works .light {
+  opacity: 0.5; }
+
+@media screen and (min-width: 768px) {
+  .how-it-works__protocols {
+    position: relative; }
+
+  .how-it-works__protocols__protocol-details {
+    position: absolute;
+    width: 50%;
+    margin: 0 auto;
+    top: 10%;
+    right: 0; } }
+  @media screen and (min-width: 768px) and (min-width: 1024px) {
+    .how-it-works__protocols__protocol-details {
+      top: 0; } }
 
 /*# sourceMappingURL=index.css.map */
