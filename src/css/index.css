@@ -277,8 +277,7 @@ a {
     border: 1px solid #222844;
     text-align: start;
     border-radius: 0.5rem;
-    display: block;
-    margin-bottom: 1rem; }
+    display: block; }
     @media (min-width: 1024px) {
       .how-it-works__protocols-list__item a {
         padding: 1.2rem; } }
@@ -300,7 +299,7 @@ a {
       .how-it-works__protocols-list__item__article__figure {
         width: 80%; } }
     .how-it-works__protocols-list__item__article__figure__image {
-      margin-bottom: 1rem; }
+      margin: 1rem 0; }
   .how-it-works__protocols-list__item__article__subheading {
     text-align: center;
     color: #222844; }
