@@ -244,3 +244,69 @@ h1 + p {
     }
   }
 }
+
+// WORLD CLASS DOCTORS
+.world-class-expert-doctors {
+  background-color: $dark-blue;
+  overflow: hidden;
+
+  &__heading,
+  &__content {
+    color: $white;
+  }
+
+  .world-class-expert-doctors__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+
+    &__item {
+      display: grid;
+      grid-template-rows: 3fr 1fr;
+      height: 30rem;
+
+      &__figure {
+        height: 100%;
+        overflow: hidden;
+
+        &__image {
+          height: 100%;
+          object-position: center 20%;
+        }
+      }
+
+      &__doctors-description {
+        background-color: $white;
+        padding-top: 0.5rem;
+        padding-right: 0.5rem;
+        border-bottom: 3px solid $sky-blue;
+        &__name {
+          color: $dodger-blue;
+          margin-bottom: 0.5rem;
+          // margin-left: 2.5rem;
+          &::before {
+            margin: 0 0.1rem;
+            display: inline-block;
+            transform: translateY(-0.3rem);
+            content: "";
+            line-height: 0;
+            border-bottom: 0.15rem solid $dodger-blue;
+            width: 2rem;
+          }
+          @include desktop-view-only {
+            font-size: 1.25rem;
+          }
+        }
+
+        &__details {
+          padding-left: 2.5rem;
+          color: $dark-blue;
+          font-size: 0.9rem;
+          & li {
+            margin: 0.5rem 0;
+          }
+        }
+      }
+    }
+  }
+}

@@ -324,4 +324,49 @@ a {
       bottom: 1rem;
       left: 50%; } }
 
+.world-class-expert-doctors {
+  background-color: #222844;
+  overflow: hidden; }
+  .world-class-expert-doctors__heading, .world-class-expert-doctors__content {
+    color: #fff; }
+  .world-class-expert-doctors .world-class-expert-doctors__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem; }
+    .world-class-expert-doctors .world-class-expert-doctors__list__item {
+      display: grid;
+      grid-template-rows: 3fr 1fr;
+      height: 30rem; }
+      .world-class-expert-doctors .world-class-expert-doctors__list__item__figure {
+        height: 100%;
+        overflow: hidden; }
+        .world-class-expert-doctors .world-class-expert-doctors__list__item__figure__image {
+          height: 100%;
+          object-position: center 20%; }
+      .world-class-expert-doctors .world-class-expert-doctors__list__item__doctors-description {
+        background-color: #fff;
+        padding-top: 0.5rem;
+        padding-right: 0.5rem;
+        border-bottom: 3px solid #93bede; }
+        .world-class-expert-doctors .world-class-expert-doctors__list__item__doctors-description__name {
+          color: #047aed;
+          margin-bottom: 0.5rem; }
+          .world-class-expert-doctors .world-class-expert-doctors__list__item__doctors-description__name::before {
+            margin: 0 0.1rem;
+            display: inline-block;
+            transform: translateY(-0.3rem);
+            content: "";
+            line-height: 0;
+            border-bottom: 0.15rem solid #047aed;
+            width: 2rem; }
+          @media (min-width: 1024px) {
+            .world-class-expert-doctors .world-class-expert-doctors__list__item__doctors-description__name {
+              font-size: 1.25rem; } }
+        .world-class-expert-doctors .world-class-expert-doctors__list__item__doctors-description__details {
+          padding-left: 2.5rem;
+          color: #222844;
+          font-size: 0.9rem; }
+          .world-class-expert-doctors .world-class-expert-doctors__list__item__doctors-description__details li {
+            margin: 0.5rem 0; }
+
 /*# sourceMappingURL=index.css.map */
