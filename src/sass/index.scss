@@ -213,7 +213,10 @@ h1 + p {
           width: 90%;
           margin: auto;
           @include respond-above-tablet-view {
-            width: 80%;
+            max-width: 300px;
+          }
+          @include desktop-view-only {
+            max-width: 450px;
           }
           &__image {
             margin: 1rem 0;
@@ -233,7 +236,8 @@ h1 + p {
 
         @include respond-above-tablet-view {
           position: absolute;
-          top: 0;
+          bottom: 1rem;
+          // top: 1rem;
           left: 50%;
         }
       }

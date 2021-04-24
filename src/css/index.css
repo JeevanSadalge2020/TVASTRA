@@ -303,7 +303,10 @@ a {
     margin: auto; }
     @media screen and (min-width: 768px) {
       .how-it-works__protocols-list__item__article__figure {
-        width: 80%; } }
+        max-width: 300px; } }
+    @media (min-width: 1024px) {
+      .how-it-works__protocols-list__item__article__figure {
+        max-width: 450px; } }
     .how-it-works__protocols-list__item__article__figure__image {
       margin: 1rem 0; }
   .how-it-works__protocols-list__item__article__subheading {
@@ -318,7 +321,7 @@ a {
   @media screen and (min-width: 768px) {
     .how-it-works__protocols-list__item__article {
       position: absolute;
-      top: 0;
+      bottom: 1rem;
       left: 50%; } }
 
 /*# sourceMappingURL=index.css.map */
