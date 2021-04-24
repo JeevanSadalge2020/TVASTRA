@@ -165,11 +165,15 @@ h1 + p {
   }
 
   &__protocols-list {
+    :first-child a {
+      color: $dark-blue;
+    }
     display: grid;
     grid-template-columns: auto;
     gap: 1rem;
-    :first-child a {
-      color: $dark-blue;
+
+    @include respond-above-tablet-view {
+      position: relative;
     }
     &__item {
       a {
@@ -183,6 +187,9 @@ h1 + p {
 
         @include desktop-view-only {
           padding: 1.2rem;
+        }
+        @include respond-above-tablet-view {
+          width: 45%;
         }
       }
 
@@ -222,6 +229,12 @@ h1 + p {
         &__content {
           color: $very-dark-blue;
           margin-bottom: 0;
+        }
+
+        @include respond-above-tablet-view {
+          position: absolute;
+          top: 0;
+          left: 50%;
         }
       }
     }

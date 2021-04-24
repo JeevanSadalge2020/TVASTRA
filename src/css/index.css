@@ -270,6 +270,9 @@ a {
   gap: 1rem; }
   .how-it-works__protocols-list :first-child a {
     color: #222844; }
+  @media screen and (min-width: 768px) {
+    .how-it-works__protocols-list {
+      position: relative; } }
   .how-it-works__protocols-list__item a {
     font-family: "Nexa-Bold";
     color: #a19f9f;
@@ -281,6 +284,9 @@ a {
     @media (min-width: 1024px) {
       .how-it-works__protocols-list__item a {
         padding: 1.2rem; } }
+    @media screen and (min-width: 768px) {
+      .how-it-works__protocols-list__item a {
+        width: 45%; } }
   .how-it-works__protocols-list__item__heading {
     margin-bottom: 0; }
     @media (min-width: 1024px) {
@@ -309,5 +315,10 @@ a {
   .how-it-works__protocols-list__item__article__content {
     color: #021433;
     margin-bottom: 0; }
+  @media screen and (min-width: 768px) {
+    .how-it-works__protocols-list__item__article {
+      position: absolute;
+      top: 0;
+      left: 50%; } }
 
 /*# sourceMappingURL=index.css.map */
