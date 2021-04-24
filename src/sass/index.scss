@@ -1,10 +1,12 @@
 @import "theme.scss";
 
+// ---------UTILITY SECTION-----------
 h1,
 h2,
 h3 {
   color: $dark-blue;
   text-align: center;
+
   @include desktop-view-only {
     text-align: left;
   }
@@ -14,10 +16,22 @@ a {
   color: $dark-blue;
 }
 
-h3 > p {
-  text-align: left;
+h3 + p,
+h1 + p {
+  @include desktop-view-only {
+    text-align: left;
+  }
 }
 
+.show {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+// ---------------------------MAIN STYLES-----------------------
 // HEADER
 .header {
   display: flex;
@@ -28,7 +42,7 @@ h3 > p {
     width: 7rem;
   }
 
-  &__navbar__services {
+  &__navbar__services-list {
     display: none;
     @include desktop-view-only {
       display: flex;
@@ -146,30 +160,31 @@ h3 > p {
     color: $very-dark-blue;
     @include desktop-view-only {
       margin-bottom: 4rem;
-      // text-align: left;
+      text-align: left;
     }
   }
 
-  &__protocols {
-    &__item {
-      font-family: "Nexa-Bold";
+  &__protocols-list {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 1rem;
+    :first-child a {
       color: $dark-blue;
-      padding: 0.75rem 1rem;
-      border: 1px solid $dark-blue;
-      text-align: start;
-      border-radius: 0.5rem;
-      margin-bottom: 1rem;
+    }
+    &__item {
+      a {
+        font-family: "Nexa-Bold";
+        color: $grey;
+        padding: 0.75rem 1rem;
+        border: 1px solid $dark-blue;
+        text-align: start;
+        border-radius: 0.5rem;
+        display: block;
+        margin-bottom: 1rem;
 
-      @include respond-above-tablet-view {
-        width: 50%;
-      }
-
-      @include desktop-view-only {
-        padding: 1.2rem;
-      }
-
-      @include desktop-view-only {
-        width: 40%;
+        @include desktop-view-only {
+          padding: 1.2rem;
+        }
       }
 
       &__heading {
@@ -180,61 +195,36 @@ h3 > p {
 
         span {
           margin-right: 0.5rem;
-          color: $sky-blue;
           font-size: 1.3rem;
           @include desktop-view-only {
             margin-right: 2rem;
           }
         }
       }
-      // TO REMOVE MARGIN FROM LAST CHILD
-      &--surgury-completed {
-        margin-bottom: 0;
-      }
-    }
-    &__protocol-details {
-      &__figure {
-        width: 90%;
-        margin: auto;
-        @include respond-above-tablet-view {
-          width: 80%;
-        }
-        &__image {
-          margin-bottom: 1rem;
-        }
-      }
-      &__subheading {
-        text-align: center;
-        color: $dark-blue;
-        @include desktop-view-only {
-          font-size: 1.1rem;
-        }
-      }
 
-      &__content {
-        color: $very-dark-blue;
+      &__article {
+        &__figure {
+          width: 90%;
+          margin: auto;
+          @include respond-above-tablet-view {
+            width: 80%;
+          }
+          &__image {
+            margin-bottom: 1rem;
+          }
+        }
+        &__subheading {
+          text-align: center;
+          color: $dark-blue;
+          @include desktop-view-only {
+            font-size: 1.1rem;
+          }
+        }
+        &__content {
+          color: $very-dark-blue;
+          margin-bottom: 0;
+        }
       }
-    }
-  }
-
-  .light {
-    opacity: 0.5;
-  }
-}
-
-@include respond-above-tablet-view {
-  .how-it-works__protocols {
-    position: relative;
-  }
-  .how-it-works__protocols__protocol-details {
-    position: absolute;
-    width: 50%;
-    margin: 0 auto;
-    top: 10%;
-    // bottom: 10%;
-    right: 0;
-    @include desktop-view-only {
-      top: 0;
     }
   }
 }
