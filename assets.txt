@@ -1,4 +1,5 @@
                         IMAGES
+
 https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-01.png
 https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-02.png
 https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-03.png
@@ -14,34 +15,61 @@ https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-12.png
 https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Lab_Test_100x100.png
 https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Logo.jpg
 https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/certificate.png
+
+TVASTRA FOOTER
 https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/footer.png
+GPS
 https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/gps.png
+INFERTILITY
 https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--000.jpg
+CHARLIE MOON
 https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--002.jpg
+ROSE MOON
 https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--003.jpg
+GEORGEA PETER
 https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--004.jpg
+DUKE SANSON
 https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--005.jpg
+MULTI ORGAN TRANSPLANT
 https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--006.jpg
+INFERTILITY
 https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--007.jpg
+KNEE
 https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--008.jpg
+DENTISTRY
 https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--009.jpg
+CANCER
 https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--010.jpg
+STETHESCOPE TOUCHING CHEST
 https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--011.jpg
+STESTESCOPE
 https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img1.jpg
+INDEX PAGE HOW IT WORKS
 https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img1.png
-https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img2.png
+LADY WITH COMPUTER
+https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img2.png 
+TWO LADIES DISCUSSING
 https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img3.jpeg
+OPERATION THEATRE
 https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img4.jpeg
+PERSON THINKING
 https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img5.jpg
+ARROW AND DOCTOR
 https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img6.jpg
+PATIENT ON STRETCHER
 https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img7.jpeg
+DOCTORS POSING
 https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Doctors.png
 
 
                             ABOUT US
+3 GIRLS SMILLING
 https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/aboutUs_hero.jpeg
+DIFFERENT DOCTOR
 https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/femaleDoctor.png
+DOCTOR SIGN
 https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/signature.png
+VIDEO
 https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/video/The+New+Stamford+Hospital+TV+Commercial.mp4
 
                         TREATMENT-DENTIST

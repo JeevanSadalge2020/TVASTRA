@@ -270,24 +270,31 @@ p {
 @media screen and (min-width: 768px) {
   select {
     font-size: 0.9rem; } }
-.doctors {
+.showcase {
+  display: none; }
+
+@media (min-width: 1024px) {
+  .showcase {
+    display: flex; } }
+.hospitals {
   display: grid;
   grid-template-columns: auto;
   gap: 1rem; }
   @media screen and (min-width: 768px) {
-    .doctors {
+    .hospitals {
       grid-template-columns: 1fr 3fr; } }
   @media (min-width: 1024px) {
-    .doctors {
+    .hospitals {
+      grid-template-columns: 1fr 3fr;
       gap: 2rem; } }
-  .doctors .filter-section {
+  .hospitals .filter-section {
     display: flex;
     flex-direction: column;
     gap: 1rem; }
-    .doctors .filter-section__filter-by {
+    .hospitals .filter-section__filter-by {
       padding: 0.5rem 1rem;
       border-bottom: 1px solid #a19f9f; }
-      .doctors .filter-section__filter-by__para {
+      .hospitals .filter-section__filter-by__para {
         margin-bottom: 0;
         text-align: left;
         background-color: #d3d3d3;
@@ -295,111 +302,111 @@ p {
         margin-bottom: 1rem;
         color: #222844;
         font-size: 1rem; }
-      .doctors .filter-section__filter-by--filtered {
+      .hospitals .filter-section__filter-by--filtered {
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-start;
         align-items: center;
         gap: 0.5rem; }
-        .doctors .filter-section__filter-by--filtered div {
+        .hospitals .filter-section__filter-by--filtered div {
           display: flex;
           justify-content: center;
           align-items: center;
           border-radius: 1rem;
           border: 1px solid #a19f9f;
           padding: 0.25rem 0.5rem; }
-          .doctors .filter-section__filter-by--filtered div p {
+          .hospitals .filter-section__filter-by--filtered div p {
             font-size: 0.85rem;
             margin-bottom: 0; }
-          .doctors .filter-section__filter-by--filtered div i {
+          .hospitals .filter-section__filter-by--filtered div i {
             color: #047aed;
             margin-left: 0.5rem; }
-    .doctors .filter-section__filter-sub-section {
+    .hospitals .filter-section__filter-sub-section {
       border-bottom: 1px solid #a19f9f;
       padding: 0.5rem 1.5rem; }
-      .doctors .filter-section__filter-sub-section div {
+      .hospitals .filter-section__filter-sub-section div {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-bottom: 0.5rem; }
-        .doctors .filter-section__filter-sub-section div :last-child {
+        .hospitals .filter-section__filter-sub-section div :last-child {
           display: flex;
           width: 40px;
           justify-content: space-between;
           align-items: center;
           margin-bottom: 0; }
-          .doctors .filter-section__filter-sub-section div :last-child i {
+          .hospitals .filter-section__filter-sub-section div :last-child i {
             font-size: 0.8rem;
             width: 16px;
             margin-bottom: 0; }
-          .doctors .filter-section__filter-sub-section div :last-child :first-child {
+          .hospitals .filter-section__filter-sub-section div :last-child :first-child {
             color: #047aed; }
-          .doctors .filter-section__filter-sub-section div :last-child :last-child {
+          .hospitals .filter-section__filter-sub-section div :last-child :last-child {
             color: #525659; }
-        .doctors .filter-section__filter-sub-section div :first-child {
+        .hospitals .filter-section__filter-sub-section div :first-child {
           margin-bottom: 0;
           font-family: "Nexa-Bold";
           text-align: left; }
-      .doctors .filter-section__filter-sub-section ul li {
+      .hospitals .filter-section__filter-sub-section ul li {
         display: flex;
         gap: 1rem;
         align-items: center;
         justify-items: left;
         color: #222844;
         margin-bottom: 0.5rem; }
-        .doctors .filter-section__filter-sub-section ul li input {
+        .hospitals .filter-section__filter-sub-section ul li input {
           width: 1rem;
           margin: 0.25rem 0; }
-        .doctors .filter-section__filter-sub-section ul li label {
+        .hospitals .filter-section__filter-sub-section ul li label {
           letter-spacing: 0.05rem;
           color: #222844; }
-      .doctors .filter-section__filter-sub-section input[type="button"] {
+      .hospitals .filter-section__filter-sub-section input[type="button"] {
         padding: 0;
         color: #047aed;
         text-align: left;
         margin: 0;
         font-size: 1rem; }
   @media screen and (min-width: 768px) {
-    .doctors .filter-section__filter-by__para {
+    .hospitals .filter-section__filter-by__para {
       padding: 0.5rem 1rem; }
-    .doctors .filter-section__filter-by--filtered div p {
+    .hospitals .filter-section__filter-by--filtered div p {
       font-size: 0.75rem; }
-    .doctors .filter-section__filter-sub-section {
+    .hospitals .filter-section__filter-sub-section {
       padding: 0.5rem 1rem; }
-      .doctors .filter-section__filter-sub-section ul li label {
+      .hospitals .filter-section__filter-sub-section ul li label {
         font-size: 0.75rem; }
-      .doctors .filter-section__filter-sub-section input[type="button"] {
+      .hospitals .filter-section__filter-sub-section input[type="button"] {
         font-size: 0.8rem; } }
   @media (min-width: 1024px) {
-    .doctors .filter-section__filter-by--filtered div p {
+    .hospitals .filter-section__filter-by--filtered div p {
       font-size: 0.8rem; }
-    .doctors .filter-section__filter-sub-section ul li {
+    .hospitals .filter-section__filter-sub-section ul li {
       gap: 2rem; }
-      .doctors .filter-section__filter-sub-section ul li label {
+      .hospitals .filter-section__filter-sub-section ul li label {
         font-size: 0.9rem; }
-    .doctors .filter-section__filter-sub-section input[type="button"] {
+    .hospitals .filter-section__filter-sub-section input[type="button"] {
       font-size: 1rem; } }
   @media (max-width: 767px) {
-    .doctors .filter-section {
+    .hospitals .filter-section {
       display: none; } }
-  .doctors__list {
+  .hospitals__list {
     display: flex;
     flex-direction: column;
     gap: 1rem; }
-    .doctors__list .card {
+    .hospitals__list .card {
       display: grid;
       grid-template-columns: auto;
       gap: 1rem;
       border: 1px solid #a19f9f; }
-      .doctors__list .card__content {
+      .hospitals__list .card__content {
         display: flex;
         flex-direction: column;
         gap: 1rem; }
-        .doctors__list .card__content__heading {
+        .hospitals__list .card__content__heading {
           color: #047aed;
           margin-top: 1rem;
           margin-bottom: 0; }
-          .doctors__list .card__content__heading::before {
+          .hospitals__list .card__content__heading::before {
             margin: 0 0.1rem 0 0;
             display: inline-block;
             transform: translateY(-0.3rem);
@@ -407,64 +414,89 @@ p {
             line-height: 0;
             border-bottom: 0.15rem solid #047aed;
             width: 2.1rem; }
-        .doctors__list .card__content__list {
+        .hospitals__list .card__content__list {
           display: grid;
           grid-template-columns: auto;
           gap: 0.5rem; }
-          .doctors__list .card__content__list__item {
+          .hospitals__list .card__content__list__item {
             display: flex;
             justify-content: left;
             align-items: center; }
-            .doctors__list .card__content__list__item p {
+            .hospitals__list .card__content__list__item p {
               margin-bottom: 0;
               text-align: left; }
-            .doctors__list .card__content__list__item i {
+            .hospitals__list .card__content__list__item i {
               color: #047aed;
               width: 1rem;
               margin-right: 1rem;
               margin-left: 0.5rem;
               text-align: center; }
-        .doctors__list .card__content button {
+        .hospitals__list .card__content button {
           align-self: center; }
-      .doctors__list .card__figure {
+      .hospitals__list .card__figure {
         height: 22rem;
         overflow: hidden; }
-        .doctors__list .card__figure img {
+        .hospitals__list .card__figure img {
           height: 100%;
           object-position: center 20%; }
     @media screen and (min-width: 768px) {
-      .doctors__list .card {
+      .hospitals__list .card {
         grid-template-columns: 1fr 200px;
         gap: 2rem;
         overflow: hidden; }
-        .doctors__list .card__content__list {
+        .hospitals__list .card__content__list {
           grid-template-columns: 1fr 1.3fr;
           padding-left: 2rem; }
-          .doctors__list .card__content__list__item p {
+          .hospitals__list .card__content__list__item p {
             font-size: 0.8rem; }
-        .doctors__list .card__content button {
+        .hospitals__list .card__content button {
           align-self: flex-start;
           margin-left: 2.5rem;
           margin-bottom: 1rem; }
-        .doctors__list .card__figure {
+        .hospitals__list .card__figure {
           width: 100%;
           height: auto; } }
     @media (min-width: 1024px) {
-      .doctors__list .card {
+      .hospitals__list .card {
         grid-template-columns: 1fr 256px; }
-        .doctors__list .card__content__heading {
+        .hospitals__list .card__content__heading {
           font-size: 1.5rem; }
-        .doctors__list .card__content__list {
+        .hospitals__list .card__content__list {
           gap: 1rem; }
-          .doctors__list .card__content__list__item p {
+          .hospitals__list .card__content__list__item p {
             font-size: 0.9rem; }
-        .doctors__list .card__figure {
+        .hospitals__list .card__figure {
           height: 16rem; } }
+    .hospitals__list .card__content__heading {
+      padding-left: 2.5rem;
+      text-indent: -2.5rem; }
+    .hospitals__list .card__content__list .last ul {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin-left: 2.5rem;
+      margin-top: -0.5rem; }
+      .hospitals__list .card__content__list .last ul li {
+        font-size: 0.9rem;
+        border: 1px solid #a19f9f;
+        border-radius: 1rem;
+        padding: 0.25rem 0.5rem;
+        color: #222844; }
+    @media screen and (min-width: 768px) {
+      .hospitals__list .card__content__list {
+        grid-template-columns: 7fr 3fr; }
+        .hospitals__list .card__content__list .third {
+          grid-area: 2/1/2/3; }
+        .hospitals__list .card__content__list .last {
+          grid-area: 3/1/3/3; }
+          .hospitals__list .card__content__list .last ul li {
+            font-size: 0.75rem; } }
+    @media (min-width: 1024px) {
+      .hospitals__list .card__content__list .last ul li {
+        font-size: 0.8rem; }
+      .hospitals__list .card__figure {
+        height: auto; } }
 
-@media (max-width: 767px) {
-  .showcase,
-  .doctors .filter-section {
-    display: none; } }
 .help {
   background-color: #93bede;
   text-align: center; }
@@ -576,4 +608,4 @@ p {
   .footer__social__list--icons {
     display: flex; } }
 
-/*# sourceMappingURL=doctor.css.map */
+/*# sourceMappingURL=hospital.css.map */
